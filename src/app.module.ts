@@ -20,7 +20,7 @@ import { UploadsModule } from './uploads/uploads.module';
         type: 'sqljs' as const,
         location: join(
           process.cwd(),
-          configService.get<string>('DB_PATH', './data/portfolio.sqlite'),
+          configService.get<string>('DB_PATH', './data/portfolio.sqlite3'),
         ),
         autoSave: true,
         autoLoadEntities: true,
