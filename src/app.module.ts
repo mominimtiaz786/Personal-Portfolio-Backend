@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { join } from 'path';
+import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module';
 import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
@@ -40,6 +41,7 @@ import { UploadsModule } from './uploads/uploads.module';
         },
       ],
     }),
+    AdminModule,
     AuthModule,
     ProjectsModule,
     BlogModule,
